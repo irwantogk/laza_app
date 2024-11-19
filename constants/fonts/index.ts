@@ -1,4 +1,4 @@
-export const fonts = {
+export const Fonts = {
   weight: {
     bold: "bold",
   },
@@ -16,6 +16,15 @@ export const fonts = {
       p15: 15,
       p13: 13,
       p11: 11,
+    },
+    text: {
+      txt34: 34,
+      txt28: 28,
+      txt22: 22,
+      txt17: 17,
+      txt15: 15,
+      txt13: 13,
+      txt11: 11,
     },
   },
 };
