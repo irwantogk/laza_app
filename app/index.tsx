@@ -2,7 +2,7 @@ import { Colors } from "@/constants/colors";
 import { Icons } from "@/constants/icons";
 import Button from "@/src/atoms/button";
 import ButtonWithIcon from "@/src/molecules/buttonWitIcon";
-import Register from "@/src/templates/register";
+import Greet from "@/src/templates/greet";
 import AntDesign from "@expo/vector-icons/AntDesign";
 import { Text, View } from "react-native";
 
@@ -18,7 +18,7 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Register />
+      <Greet />
     </View>
   );
 }
