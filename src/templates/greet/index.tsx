@@ -2,6 +2,7 @@ import { Colors } from "@/constants/colors";
 import Button from "@/src/atoms/button";
 import TextAtom from "@/src/atoms/text";
 import Card from "@/src/molecules/card";
+import { Link } from "expo-router";
 import {
   ImageBackground,
   Pressable,
@@ -84,17 +85,16 @@ export default function Greet() {
                 marginVertical: 20,
               }}
             >
-              <Pressable>
-                <Text
-                  style={{
-                    textAlign: "center",
-                    fontSize: 17,
-                    color: Colors.gray,
-                  }}
-                >
-                  Skip
-                </Text>
-              </Pressable>
+              <Link
+                href="/auth"
+                style={{
+                  textAlign: "center",
+                  fontSize: 17,
+                  color: Colors.gray,
+                }}
+              >
+                Skip
+              </Link>
             </View>
           </View>
         </Card>

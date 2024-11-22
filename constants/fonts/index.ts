@@ -1,6 +1,8 @@
 export const Fonts = {
   weight: {
     bold: "bold",
+    medium: "400",
+    normal: "normal",
   },
   size: {
     header: {

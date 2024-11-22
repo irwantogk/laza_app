@@ -8,14 +8,28 @@ export default function ButtonWithIcon({
   icon,
   title,
   action,
+  btnColor,
+  paddingX,
+  paddingY,
 }: {
   icon: any;
   title: string;
   action: any;
+  btnColor: string;
+  paddingX: number;
+  paddingY: number;
 }) {
   return (
     <View style={styles.container}>
-      <Pressable onPress={action} style={styles.button}>
+      <Pressable
+        onPress={action}
+        style={{
+          ...styles.button,
+          backgroundColor: btnColor,
+          paddingVertical: paddingY || 0,
+          paddingHorizontal: paddingX || 0,
+        }}
+      >
         {icon}
         <Text style={stylesBtn.btnText}>{title}</Text>
       </Pressable>

@@ -12,8 +12,9 @@ export default function TextAtom({
   isBold: boolean;
   size: number;
   isCenter: boolean;
-  colorProp?: any;
+  colorProp?: string;
 }) {
+  const txtColor = colorProp ? Colors[colorProp] : Colors.black;
   return (
     <View>
       <Text
@@ -21,7 +22,7 @@ export default function TextAtom({
           fontSize: size,
           fontWeight: isBold ? "bold" : "normal",
           textAlign: isCenter ? "center" : "justify",
-          color: colorProp ? Colors[colorProp] : Colors.black,
+          color: txtColor,
         }}
       >
         {title}
@@ -29,10 +30,3 @@ export default function TextAtom({
     </View>
   );
 }
-
-// const styles = StyleSheet.create({
-//   text: {
-//     fontSize: size,
-//     fontWeight: isBold ? "bold" : "normal",
-//   },
-// });
